@@ -443,6 +443,7 @@
   .kv .val { color: var(--ink); }
   .kv .val a { border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
   .kv .val a:hover { border-bottom-color: var(--accent); }
+  .kv .val a.email .obf { color: var(--muted); border-bottom: 0; }
   @media (max-width: 720px) { .contact-grid { grid-template-columns: 1fr; } }
 
   /* Footer */
@@ -686,10 +687,9 @@
       <div class="contact-grid">
         <div class="card accent">
           <h3>Get in touch</h3>
-          <p>Email is the best way to reach me. To find my current address, follow one of my recent first or senior author papers on the publications page.</p>
+          <p>Email is the best way to reach me.</p>
           <div class="kv">
-            <div class="row"><span class="key">Preferred</span><span class="val">Email</span></div>
-            <div class="row"><span class="key">Address via</span><span class="val"><a href="publications.html">First or senior author papers</a></span></div>
+            <div class="row"><span class="key">Email</span><span class="val"><a id="contactEmail" class="email" href="mailto:" data-e="c2l5dWFuemhlbmcucmVzZWFyY2hAZ21haWwuY29t">siyuanzheng.research<span class="obf"> at </span>gmail<span class="obf"> dot </span>com</a></span></div>
             <div class="row"><span class="key">Location</span><span class="val">San Antonio, Texas, USA</span></div>
           </div>
         </div>
@@ -836,5 +836,18 @@
       var mq = window.matchMedia('(prefers-color-scheme: dark)');
       if (mq.addEventListener) mq.addEventListener('change', function () { start = null; requestAnimationFrame(draw); });
     }
+  })();
+</script>
+
+<script>
+  // Assemble the email at runtime so the plain address never sits in the page source.
+  (function () {
+    var el = document.getElementById('contactEmail');
+    if (!el) return;
+    try {
+      var addr = atob(el.getAttribute('data-e'));
+      el.setAttribute('href', 'mailto:' + addr);
+      el.textContent = addr;
+    } catch (e) { /* leave the readable fallback in place */ }
   })();
 </script>
