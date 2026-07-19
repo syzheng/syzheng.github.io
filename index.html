@@ -711,7 +711,7 @@
   <div class="wrap">
     <div class="foot">
       <span class="sig"><span class="dot"></span> Siyuan Zheng · 郑思远</span>
-      <span>Content last updated Oct 1, 2024</span>
+      <span id="lastUpdated">Content last updated Jul 19, 2026</span>
     </div>
   </div>
 </footer>
@@ -849,5 +849,16 @@
       el.setAttribute('href', 'mailto:' + addr);
       el.textContent = addr;
     } catch (e) { /* leave the readable fallback in place */ }
+  })();
+
+  // Show the real last-updated date from the file's Last-Modified header (auto-updates on every deploy).
+  (function () {
+    var el = document.getElementById('lastUpdated');
+    if (!el) return;
+    var d = new Date(document.lastModified);
+    if (!isNaN(d.getTime())) {
+      el.textContent = 'Content last updated ' +
+        d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+    }
   })();
 </script>
