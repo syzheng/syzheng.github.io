@@ -111,6 +111,9 @@
   .pub-title { font-family: var(--serif); font-weight: 600; font-size: 1.12rem; line-height: 1.32; margin: 0 0 7px; color: var(--ink); text-wrap: pretty; }
   .pub-authors { margin: 0 0 7px; font-size: .9rem; line-height: 1.5; color: var(--muted); }
   .pub-authors b { color: var(--ink); font-weight: 700; }
+  .pub-authors sup.co { color: var(--accent-ink); font-weight: 700; font-size: .68em; padding-left: 1px; }
+  .starnote { margin: 14px 0 0; font-family: var(--mono); font-size: .72rem; letter-spacing: .02em; color: var(--muted); }
+  .starnote sup.co { color: var(--accent-ink); font-weight: 700; }
   .pub-meta { margin: 0; font-size: .84rem; color: var(--ink-soft); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .pub-meta .jrnl { font-style: italic; color: var(--cool-ink); font-weight: 550; }
   .pub-meta .cite { font-family: var(--mono); font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -156,6 +159,7 @@
     <p class="lead">
       <b>94 peer-reviewed papers</b> since 2006, of which <b>27 as first or senior author</b>. Papers led from my lab are highlighted below.
     </p>
+    <p class="starnote"><sup class="co">*</sup> denotes co-first or co-senior (corresponding) author.</p>
     <div class="stat-row">
       <div class="stat"><div class="num">94</div><div class="lbl">Total papers</div></div>
       <div class="stat"><div class="num">27</div><div class="lbl">First / senior author</div></div>
@@ -250,7 +254,7 @@
   <div class="year-items">
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">Integrative multi-omics characterization of hepatocellular carcinoma in Hispanic patients</h3>
-      <p class="pub-authors">Das D, Wang X, Chiu YC, Bouamar H, Sharkey FE, Lopera JE … Chen Y, <b>Zheng S</b>, Cigarroa FG, Sun LZ</p>
+      <p class="pub-authors">Das D, Wang X, Chiu YC, Bouamar H, Sharkey FE, Lopera JE … Chen Y, <b>Zheng S</b><sup class="co">*</sup>, Cigarroa FG<sup class="co">*</sup>, Sun LZ<sup class="co">*</sup></p>
       <p class="pub-meta"><span class="jrnl">J Natl Cancer Inst</span> · 2024 · <span class="cite">116(12):1961-1978</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/39189979/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1093/jnci/djae207" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11630563/" target="_blank" rel="noopener">Full text</a></div>
     </article>
@@ -496,7 +500,7 @@
     </article>
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">TumorFusions: an integrative resource for cancer-associated transcript fusions</h3>
-      <p class="pub-authors">Hu X, Wang Q, Tang M, Barthel F, Amin S, Yoshihara K, Lang FM, Martinez-Ledesma E, Lee SH, <b>Zheng S</b>, Verhaak RGW</p>
+      <p class="pub-authors">Hu X, Wang Q, Tang M, Barthel F, Amin S, Yoshihara K, Lang FM, Martinez-Ledesma E, Lee SH, <b>Zheng S</b><sup class="co">*</sup>, Verhaak RGW<sup class="co">*</sup></p>
       <p class="pub-meta"><span class="jrnl">Nucleic Acids Res</span> · 2018 · <span class="cite">46(D1):D1144-D1149</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/29099951/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1093/nar/gkx1018" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753333/" target="_blank" rel="noopener">Full text</a></div>
     </article>
@@ -555,7 +559,7 @@
     </article>
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">Systematic analysis of telomere length and somatic alterations in 31 cancer types</h3>
-      <p class="pub-authors">Barthel FP, Wei W, Tang M, Martinez-Ledesma E, Hu X, Amin SB … Zhang J, <b>Zheng S</b>, Verhaak RG</p>
+      <p class="pub-authors">Barthel FP, Wei W, Tang M, Martinez-Ledesma E, Hu X, Amin SB … Zhang J, <b>Zheng S</b><sup class="co">*</sup>, Verhaak RG<sup class="co">*</sup></p>
       <p class="pub-meta"><span class="jrnl">Nat Genet</span> · 2017 · <span class="cite">49(3):349-357</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/28135248/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1038/ng.3781" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5571729/" target="_blank" rel="noopener">Full text</a></div>
     </article>
@@ -619,7 +623,7 @@
     </article>
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">Whole-genome and multisector exome sequencing of primary and post-treatment glioblastoma reveals patterns of tumor evolution</h3>
-      <p class="pub-authors">Kim H, <b>Zheng S</b>, Amini SS, Virk SM, Mikkelsen T, Brat DJ … Verhaak RG</p>
+      <p class="pub-authors">Kim H<sup class="co">*</sup>, <b>Zheng S</b><sup class="co">*</sup>, Amini SS, Virk SM, Mikkelsen T, Brat DJ … Verhaak RG</p>
       <p class="pub-meta"><span class="jrnl">Genome Res</span> · 2015 · <span class="cite">25(3):316-27</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/25650244/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1101/gr.180612.114" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4352879/" target="_blank" rel="noopener">Full text</a></div>
     </article>
@@ -642,7 +646,7 @@
     </article>
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">PRADA: pipeline for RNA sequencing data analysis</h3>
-      <p class="pub-authors">Torres-García W, <b>Zheng S</b>, Sivachenko A, Vegesna R, Wang Q, Yao R, Berger MF, Weinstein JN, Getz G, Verhaak RG</p>
+      <p class="pub-authors">Torres-García W<sup class="co">*</sup>, <b>Zheng S</b><sup class="co">*</sup>, Sivachenko A, Vegesna R, Wang Q, Yao R, Berger MF, Weinstein JN, Getz G, Verhaak RG</p>
       <p class="pub-meta"><span class="jrnl">Bioinformatics</span> · 2014 · <span class="cite">30(15):2224-6</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/24695405/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1093/bioinformatics/btu169" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4103589/" target="_blank" rel="noopener">Full text</a></div>
     </article>
@@ -660,7 +664,7 @@
     </article>
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">Molecular subtypes of glioblastoma are relevant to lower grade glioma</h3>
-      <p class="pub-authors">Guan X, Vengoechea J, <b>Zheng S</b>, Sloan AE, Chen Y, Brat DJ … Barnholtz-Sloan JS</p>
+      <p class="pub-authors">Guan X<sup class="co">*</sup>, Vengoechea J<sup class="co">*</sup>, <b>Zheng S</b><sup class="co">*</sup>, Sloan AE, Chen Y, Brat DJ … Barnholtz-Sloan JS</p>
       <p class="pub-meta"><span class="jrnl">PLoS One</span> · 2014 · <span class="cite">9(3):e91216</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/24614622/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1371/journal.pone.0091216" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3948818/" target="_blank" rel="noopener">Full text</a></div>
     </article>
@@ -736,7 +740,7 @@
     </article>
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">Role of insulin-like growth factor-1 signaling pathway in cisplatin-resistant lung cancer cells</h3>
-      <p class="pub-authors">Sun Y, <b>Zheng S</b>, Torossian A, Speirs CK, Schleicher S, Giacalone NJ, Carbone DP, Zhao Z, Lu B</p>
+      <p class="pub-authors">Sun Y<sup class="co">*</sup>, <b>Zheng S</b><sup class="co">*</sup>, Torossian A, Speirs CK, Schleicher S, Giacalone NJ, Carbone DP, Zhao Z, Lu B</p>
       <p class="pub-meta"><span class="jrnl">Int J Radiat Oncol Biol Phys</span> · 2012 · <span class="cite">82(3):e563-72</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/22197230/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1016/j.ijrobp.2011.06.1999" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3271860/" target="_blank" rel="noopener">Full text</a></div>
     </article>
@@ -771,7 +775,7 @@
     </article>
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">dmGWAS: dense module searching for genome-wide association studies in protein-protein interaction networks</h3>
-      <p class="pub-authors">Jia P, <b>Zheng S</b>, Long J, Zheng W, Zhao Z</p>
+      <p class="pub-authors">Jia P<sup class="co">*</sup>, <b>Zheng S</b><sup class="co">*</sup>, Long J, Zheng W, Zhao Z</p>
       <p class="pub-meta"><span class="jrnl">Bioinformatics</span> · 2011 · <span class="cite">27(1):95-102</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/21045073/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1093/bioinformatics/btq615" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3008643/" target="_blank" rel="noopener">Full text</a></div>
     </article>
@@ -823,7 +827,7 @@
     </article>
     <article class="pub-item senior" data-role="senior">
       <h3 class="pub-title">Human gene expression sensitivity according to large scale meta-analysis</h3>
-      <p class="pub-authors">Hao P, <b>Zheng S</b>, Ping J, Tu K, Gieger C, Wang-Sattler R, Zhong Y, Li Y</p>
+      <p class="pub-authors">Hao P<sup class="co">*</sup>, <b>Zheng S</b><sup class="co">*</sup>, Ping J, Tu K, Gieger C, Wang-Sattler R, Zhong Y, Li Y</p>
       <p class="pub-meta"><span class="jrnl">BMC Bioinformatics</span> · 2009 · <span class="cite">10 Suppl 1(Suppl 1):S56</span> <span class="role-tag">First / senior author</span></p>
       <div class="pub-links"><a href="https://pubmed.ncbi.nlm.nih.gov/19208159/" target="_blank" rel="noopener">PubMed</a> <a href="https://doi.org/10.1186/1471-2105-10-S1-S56" target="_blank" rel="noopener">DOI</a> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2648786/" target="_blank" rel="noopener">Full text</a></div>
     </article>
